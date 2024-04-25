@@ -1,0 +1,45 @@
+:root {
+    --font: Lora;
+    --font-color: #333;
+    
+
+@font-face {
+    font-family: 'Lora', serif;
+    font-stretch: auto; /* Note that font-stretch is a % of normal width */
+    font-style: NORMAL; /* See note below */
+    font-weight: 400 to 700;
+    src: url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap) format('woff2');
+  }
+}
+
+h1 {
+  text-decoration: none;
+}
+
+h1 a {
+    color: #333;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00ddff;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: #deb887;
+    text-decoration: none;
+}  
+nav a:visited {
+    color: #666;
+    text-decoration: none;   
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
