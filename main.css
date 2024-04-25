@@ -1,8 +1,4 @@
 :root {
-    --font: Lora;
-    --font-color: #333;
-    
-
 @font-face {
     font-family: 'Lora', serif;
     font-stretch: auto; /* Note that font-stretch is a % of normal width */
@@ -13,13 +9,28 @@
 }
 
 h1 {
-  text-decoration: none;
+    font-size: 5em;
+    font-weight: 550;
+    text-decoration: none;
+    text-wrap: wrap;
 }
 
 h1 a {
     color: #333;
+    text-decoration: none;
 }
 
+nav ul {
+    border-top: 0.5px solid #666;
+    border-bottom: 1px solid #666;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul li {
+    padding: .5em;
+}
 nav a {
     color: #666;
     text-decoration: none;
@@ -27,16 +38,13 @@ nav a {
 
 nav a:hover {
     color: #00ddff;
-    text-decoration: none;
 }
 
 nav a:active {
     color: #deb887;
-    text-decoration: none;
 }  
 nav a:visited {
     color: #666;
-    text-decoration: none;   
 }
 
 main {
