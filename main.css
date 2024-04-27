@@ -9,10 +9,11 @@
 }
 
 h1 {
-    font-size: 5em;
-    font-weight: 550;
+    font-size: 4.2em;
+    font-weight: 500;
     text-decoration: none;
-    text-wrap: wrap;
+    text-align: center;
+    margin: .5em;
 }
 
 h1 a {
@@ -24,6 +25,7 @@ nav ul {
     border-top: 0.5px solid #666;
     border-bottom: 1px solid #666;
     list-style-type: none;
+    font-size: larger;
     text-transform: uppercase;
     text-align: center;
 }
@@ -51,3 +53,71 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
 }
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h2 a {
+    color: #666;
+    text-decoration: none;
+}
+.post-date {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: larger;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #666;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.post-content {
+    margin: 1em;
+    font-size: small;
+    text-align: left;
+}
+
+/* ***********************
+ * responsive design
+ *************************/
+ /* FOR MOBILE PHONE */
+@media only screen and (max-width: 425px) {
+    body {
+        margin: 5em auto;
+        text-wrap: wrap;
+        }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        margin: .5em;
+    }   
+    main {
+        text-wrap: wrap;
+    }
+    .post-date {
+        margin: .5em;
+        border-bottom: 1px solid #666;
+    }
+    .post-content {
+        text-wrap: wrap;
+    }
+}
+
+  /* FOR TABLETS */
+ @media only screen and (min-width: 600px) {
+    body {
+
+    }
+    
+ }
+
+ /* FOR DESKTOP */
+ @media only screen and (min-width: 968px) {
+    
+ }
