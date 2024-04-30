@@ -131,7 +131,7 @@ h2 a {
         grid-template-columns: 1fr 1fr;
     }
     article {
-        grid-column: 1/;
+        grid-column: 1;
         grid-row: 3;
         text-align: right;
         border-bottom: 1px solid #666;
