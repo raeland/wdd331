@@ -7,12 +7,6 @@
     src: url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap) format('woff2');
   }
 }
-/**** VARIABLES ****/
-$main: #333;
-$base: #666;
-$accent1: #00ddff;
-$accent2: #deb887;
-
 
 body {
     display: grid;
@@ -23,26 +17,25 @@ body {
 
 h1 {
     grid-column: 1/3;
-    margin: .5em; 
-    text: {
-        decoration: none;
-        align: center;
-    }
-    font: {
-        size: 4.2em;
-        weight: 500;
-    }
-    a {
-        color: $main;
-    }
+    font-size: 4.2em;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin: .5em;
+    text-align: center;
+}
+
+h1 a {
+    color: #333;
+    text-decoration: none;
 }
 
 nav ul {
     grid-column: 2/3;
     grid-row: 2/3;
     margin: .5em;
-    border-top: 0.5px solid $base;
-    border-bottom: 1px solid $base;
+    border-top: 0.5px solid #666;
+    border-bottom: 1px solid #666;
     list-style-type: none;
     font-size: larger;
     text-transform: uppercase;
@@ -56,38 +49,38 @@ nav ul li {
     margin: .5em;
 }
 nav a {
-    color: $base;
+    color: #666;
     text-decoration: none;
-    a:visited {
-        color: $base;
-    }
-    a:hover {
-        color: $accent1;
-    }
-    a:active {
-        color: $accent2;
-    }  
+}
+
+nav a:hover {
+    color: #00ddff;
+}
+
+nav a:active {
+    color: #deb887;
+}  
+nav a:visited {
+    color: #666;
 }
 
 main {
     font-family: Arial, Helvetica, sans-serif;
-    color: $main;
+    color: #333;
     text-wrap: wrap;
 }
 
 h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    font-weight: 400;
     text-decoration: none;
-    font: {
-        family: 'Lora', serif;
-        size: 2em;
-        weight: 400;
-        color: $main;
-    }
-    a {
-        color: $base;
-    }
 }
 
+h2 a {
+    color: #666;
+    text-decoration: none;
+}
 .post-date {
     grid-column: 1/1;
     grid-row: 3;
@@ -96,8 +89,8 @@ h2 {
     text-align: right;
     font-size: larger;
     font-weight: 600;
-    color: $main;
-    border-bottom: 1px solid $base;
+    color: #333;
+    border-bottom: 1px solid #666;
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -113,7 +106,8 @@ h2 {
  * responsive design
  *************************/
 
-@mixin responsive($responsive: desktop) {
+ /* FOR DESKTOP */
+@media only screen and (min-width: 480px) {
     body {
         max-width: 800px;
         grid-template-columns: 1fr 1fr;
@@ -140,16 +134,10 @@ h2 {
         grid-column: 1;
         grid-row: 3;
         text-align: right;
-        border-bottom: 1px solid $base;
+        border-bottom: 1px solid #666;
     }
     .post-content {
         grid-column: 2/3;
         text-align: center;
     }
-}
-
-/* FOR DESKTOP */
-//@media only screen and (min-width: 480px) 
-.info {
-    @include responsive($responsive: desktop);
 }
